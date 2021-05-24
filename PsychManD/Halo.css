@@ -38,6 +38,7 @@ nav a{
 body{
     background: url(https://www.spacestockfootage.com/wp-content/uploads/2017/05/Background-3-2.jpg);
     color: #12d5d8;
+    font-family: 'Orbitron', sans-serif ;
     animation:space_anim 45s linear infinite;
 }
 
