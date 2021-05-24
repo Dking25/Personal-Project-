@@ -44,6 +44,20 @@ body{
     100%{background-position: 0 -2000px;}
 }
 
+/* intro Secton  */
+.intro-section{
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background: #000;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+}
+
 * {box-sizing:border-box}
 
 
