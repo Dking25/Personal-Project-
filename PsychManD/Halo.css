@@ -1,0 +1,260 @@
+
+
+/* Nav bar */
+header{
+    background-color:#02055A;
+    color: #12d5d8;
+}
+
+.logo{
+    float: left;
+    padding: 35px 0;
+    margin-left: 40px;
+   
+}
+
+.navbar{
+  
+    background-color:#12043E;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+nav a{
+    list-style: none;
+    display: inline-block;
+    margin-left: 70px;
+    margin-bottom: 50px;
+    margin-right: 100px;
+    padding-top: 40px;
+    color: #12d5d8;
+    text-decoration: none;
+  
+}
+
+
+/* body */
+body{
+    background: url(https://www.spacestockfootage.com/wp-content/uploads/2017/05/Background-3-2.jpg);
+    color: #12d5d8;
+}
+
+/*  Slide show container */
+
+.hero-slideshow{
+   max-width: 1000px;
+   position: relative;
+   margin: auto; 
+}
+
+/*  hide the images by default */
+
+.slide{
+    display: none;
+}
+
+/* next and previouse button */
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* position next button to right */
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* on hover, black background transparent  */
+
+.prev:hover, .next:hover {
+    background: rgba(0,0,0,0.8);
+}
+
+/* number text */
+
+.image-order{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* the Dots */
+
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover{
+    background-color: #717171;
+}
+
+/* fading */
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* information section  */
+
+.info-section{
+    background: rgba(0,0,0,.8);
+    text-align: center;
+    padding: 40px 400px 40px 400px;
+}
+.catagory-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.catagory-container img:hover{
+    transform: scale(1.2);
+    border-radius: 30px;
+}
+
+.modal-content {
+    text-align: center;
+    background: rgba(0,0,0,0.8);
+    font-size: 16px;
+    word-spacing: 3px;
+}
+
+/* overlay for catagories */
+
+.overlay {
+    position: fixed; 
+    display: none; 
+    width: 50%; 
+    height: 50%; 
+    top: 100px;
+    left: 400px;
+    right: 200px;
+    bottom: 100px;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 2; 
+    cursor: pointer; 
+  }
+/* footer */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #12043E;
+    height: auto;
+    width: 100vw;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 40px;
+    color:#12d5d8;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.apps{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.apps li{
+    margin: 0 10px;
+}
+
+.apps a{
+   text-decoration: none;
+   color:#12d5d8; 
+}
+
+.apps a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.apps a:hover i{
+    color:aliceblue;
+}
+
+.footer-bottom{
+    background: #12043E;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
