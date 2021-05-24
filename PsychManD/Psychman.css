@@ -36,6 +36,12 @@ body{
     background-image: url(https://i.pinimg.com/originals/f9/f9/37/f9f937b6f8eef06818b7a0bfb512232c.jpg);
     color: #12d5d8;
     font-family: "Astro Space", serif  ;
+    animation: hex_anim 75s linear infinite;
+}
+
+@keyframes hex_anim{
+    0%{background-position: 0 0;}
+    100%{background-position: 0 -2000px;}
 }
 
 * {box-sizing:border-box}
