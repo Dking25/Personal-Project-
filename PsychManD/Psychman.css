@@ -34,6 +34,7 @@ nav a{
     padding-top: 20px;
     color: #12d5d8;
     text-decoration: none;
+    font-size: 20px;
   
 }
 
@@ -166,6 +167,7 @@ body{
     background: rgba(0,0,0,.8);
     text-align: center;
     padding: 40px 400px 40px 400px;
+    font-size: 25px;
 }
 
 /* catagory section   */
@@ -285,8 +287,12 @@ background-color: #1d1238;
 .modal-content {
     text-align: center;
     background: rgba(0,0,0,0.8);
-    font-size: 16px;
+    font-size: 20px;
     word-spacing: 3px;
+}
+
+.modal-content h3{
+    margin-top: 40px;
 }
 
 .overlay-text{
