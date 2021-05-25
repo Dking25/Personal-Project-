@@ -41,7 +41,7 @@ nav a{
 /* body */
 
 body{
-    background-image: url(https://i.pinimg.com/originals/f9/f9/37/f9f937b6f8eef06818b7a0bfb512232c.jpg);
+    background:url(/PsychManD/Images/hexagon-bodybackground.jpg);
     color: #12d5d8;
     font-family:'El Messiri', sans-serif  ;
     animation: hex_anim 580s linear infinite;

@@ -16,12 +16,12 @@ header{
 .navbar{
     width: 100%;
     height: 100px;
-    background:url(https://cutewallpaper.org/21/purple-and-blue-background/Black-Purple-Blue-background-by-FriendshipFan1996-on-DeviantArt.jpg);
+    background:url(/PsychManD/Images/nav-barbackgroundimage.jpg);
     margin-bottom: 20px;
-    animation: nav_anim 100s linear infinite;
+    animation: nav_anime 100s linear infinite;
 }
 
-@keyframes nav_anim{
+@keyframes nav_anime{
     0%{background-position: 0 0;}
     100%{background-position: -3122px, 0;}
 }
@@ -47,7 +47,7 @@ nav a{
 /* body */
 
 body{
-    background: url(https://www.spacestockfootage.com/wp-content/uploads/2017/05/Background-3-2.jpg);
+    background: url(/PsychManD/Images/space-bodybackground.jpg);
     color: #12d5d8;
     font-family: 'Orbitron', sans-serif ;
     animation:space_anim 45s linear infinite;
@@ -257,7 +257,7 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
-    background:url(https://cutewallpaper.org/21/purple-and-blue-background/Black-Purple-Blue-background-by-FriendshipFan1996-on-DeviantArt.jpg);
+    background:url(/PsychManD/Images/nav-barbackgroundimage.jpg);
     animation: nav_anim 100s linear infinite;
     height: auto;
     width: 100vw;
