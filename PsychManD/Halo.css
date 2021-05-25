@@ -14,13 +14,23 @@ header{
 }
 
 .navbar{
-  
-    background-color:#12043E;
+    width: 100%;
+    height: 100px;
+    background:url(https://cutewallpaper.org/21/purple-and-blue-background/Black-Purple-Blue-background-by-FriendshipFan1996-on-DeviantArt.jpg);
+    margin-bottom: 20px;
+    animation: nav_anim 100s linear infinite;
 }
+
+@keyframes nav_anim{
+    0%{background-position: 0 0;}
+    100%{background-position: -3122px, 0;}
+}
+
 nav{
     display: flex;
     justify-content: center;
 }
+
 nav a{
     list-style: none;
     display: inline-block;
@@ -35,6 +45,7 @@ nav a{
 
 
 /* body */
+
 body{
     background: url(https://www.spacestockfootage.com/wp-content/uploads/2017/05/Background-3-2.jpg);
     color: #12d5d8;
@@ -142,7 +153,11 @@ body{
     background: rgba(0,0,0,.8);
     text-align: center;
     padding: 40px 400px 40px 400px;
+    word-spacing: 3px;
 }
+
+/* catagory section */
+
 .catagory-container{
     display: flex;
     flex-direction: row;
@@ -152,9 +167,11 @@ body{
     margin-bottom: 40px;
 }
 
+
 .catagory-container img:hover{
     transform: scale(1.2);
     border-radius: 30px;
+    transition: .25s;
 }
 
 .modal-content {
@@ -175,9 +192,20 @@ body{
     left: 400px;
     right: 200px;
     bottom: 100px;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.95);
     z-index: 2; 
     cursor: pointer; 
+    border-radius: 30px;
+  }
+
+  .overlay h3{
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .overlay p{
+      font-weight: 500;
+      word-spacing: 2px;
   }
 /* footer */
 
@@ -192,13 +220,20 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
-    background: #12043E;
+    background:url(https://cutewallpaper.org/21/purple-and-blue-background/Black-Purple-Blue-background-by-FriendshipFan1996-on-DeviantArt.jpg);
+    animation: nav_anim 100s linear infinite;
     height: auto;
     width: 100vw;
     font-family: 'Courier New', Courier, monospace;
     padding-top: 40px;
     color:#12d5d8;
 }
+
+@keyframes nav_anim{
+    0%{background-position: 0 0;}
+    100%{background-position: -3122px, 0;}
+}
+
 .footer-content{
     display: flex;
     align-items: center;
@@ -248,7 +283,6 @@ footer{
 }
 
 .footer-bottom{
-    background: #12043E;
     width: 100vw;
     padding: 20px 0;
     text-align: center;
