@@ -83,6 +83,14 @@ body{
     display: none;
 }
 
+/* slide show images  */
+
+.slide-show-image{
+    align-items: center;
+    width: 1000px;
+    height: 700px;
+}
+
 /* next and previouse button */
 
 .prev, .next{
