@@ -1,22 +1,18 @@
 /* Nav bar */
-header{
-    background-color:#02055A;
-    color: #12d5d8;
-}
+
 
 .logo{
     float: left;
     padding: 10px 0;
     margin-left: 40px;
-   
+    color: #916cb8;
+    text-shadow: 5px 3px 10px #0A51c5;
 }
 
 .navbar{
     width: 100%;
     height: 100px;
-    background: radial-gradient( circle, black, #130c25, #1d1238 );
-    margin-bottom: 20px;
-    
+    background-image: radial-gradient( circle, black, #130c25, #1d1238 );
 }
 
 
@@ -32,7 +28,8 @@ nav a{
     margin-bottom: 50px;
     margin-right: 100px;
     padding-top: 20px;
-    color: #12d5d8;
+    color: #916cb8;
+    text-shadow: 5px 3px 10px #0A51c5;
     text-decoration: none;
     font-size: 20px;
   
@@ -40,12 +37,7 @@ nav a{
 
 /* body */
 
-body{
-    background:url(/PsychManD/Images/hexagon-bodybackground.jpg);
-    color: #12d5d8;
-    font-family:'El Messiri', sans-serif  ;
-    animation: hex_anim 580s linear infinite;
-}
+
 
 @keyframes hex_anim{
     0%{background-position: 0 0;}
@@ -53,22 +45,136 @@ body{
 }
 
 /* intro Secton  */
-.intro-section{
+section{
+    background-image: radial-gradient( circle, black, #130c25, #1d1238 );
+    position: relative;
     padding: 10px;
     margin-bottom: 10px;
-    text-align: center;
-    background: rgba(0,0,0,0.4);
     height: 500px;
     width: 100%;
+    border: solid 5px rgba(0,0,0,0.025);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3em;
-    border: solid 5px rgba(0,0,0,0.025);
+    overflow: hidden;
 }
+
+section img{
+    width: 50px;
+    height: 50px;
+}
+
+section h1{
+    padding-top: 200px;
+    color: #916cb8;
+    text-shadow: 5px 3px 10px #0A51c5;
+    font-size: 4em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+section .welcome-title{
+    position:absolute;
+    width:100% ;
+    height:100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+section .welcome-title div{
+    position: absolute;
+    display: block;
+}
+
+section .welcome-title div:nth-child(1){
+    left: 20%;
+    animation: welcome-anim 15s linear infinite;
+    animation-delay: -7s;
+}
+
+section .welcome-title div:nth-child(2){
+    left: 50%;
+    animation: welcome-anim 20s linear infinite;
+    animation-delay: -5s;
+}
+
+section .welcome-title div:nth-child(3){
+    left: 70%;
+    animation: welcome-anim 15s linear infinite;
+    animation-delay: 0s;
+}
+
+section .welcome-title div:nth-child(4){
+    left: 0%;
+    animation: welcome-anim 15s linear infinite;
+    animation-delay: -5s;
+}
+
+section .welcome-title div:nth-child(5){
+    left: 85%;
+    animation: welcome-anim 18s linear infinite;
+    animation-delay: -10s;
+}
+
+section .welcome-title div:nth-child(6){
+    left: 15%;
+    animation: welcome-anim 14s linear infinite;
+}
+
+section .welcome-title div:nth-child(7){
+    left: 60%;
+    animation: welcome-anim 15s linear infinite;
+  
+}
+
+section .welcome-title div:nth-child(8){
+    left: 95%;
+    animation: welcome-anim 15s linear infinite;
+  
+}
+section .welcome-title div:nth-child(9){
+    left: 30%;
+    animation: welcome-anim 15s linear infinite;
+  
+}
+
+@keyframes welcome-anim{
+    0%{
+        opacity: 0;
+        top: -10%;
+        transform: translateX(20px) rotate(0deg);
+    }
+    10%{
+        opacity: 1;
+    }
+    20%{
+        transform: translateX(-20px) rotate(45deg);
+    }
+    40%{
+        transform: translateX(20px) rotate(90deg);
+    }
+    60%{
+        transform: translateX(20px) rotate(180deg);
+    }
+    80%{
+        transform: translateX(-20px) rotate(180deg);
+    } 
+    100%{
+        top: 110%;
+        transform: translateX(-20px) rotate(225deg);
+    }
+}
+
+/* body section */
 
 * {box-sizing:border-box}
 
+body{
+    background-image:url(/PsychManD/Images/Backgroundimages/hexagon-bodybackground.jpg);
+    font-family:'El Messiri', sans-serif  ;
+    animation: hex_anim 580s linear infinite;
+}
 
 /*  Slide show container */
 
@@ -168,6 +274,8 @@ body{
     text-align: center;
     padding: 40px 400px 40px 400px;
     font-size: 25px;
+    color: #916cb8;
+    text-shadow: 5px 3px 10px #0A51c5;
 }
 
 /* catagory section   */
@@ -296,7 +404,8 @@ background-color: #1d1238;
 }
 
 .overlay-text{
-    color: #12d5d8;
+    color: #916cb8;
+    text-shadow: 5px 3px 10px #0A51c5;
     font-size: 40px;
     position: absolute;
     top: 50%;
@@ -334,12 +443,13 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
-    background: radial-gradient( circle, black, #130c25, #1d1238 );
+    background-image: radial-gradient( circle, black, #130c25, #1d1238 );
     height: auto;
     width: 100vw;
     font-family: 'Courier New', Courier, monospace;
     padding-top: 40px;
-    color:#12d5d8;
+    color: #916cb8;
+    text-shadow: 5px 3px 10px #0A51c5;
 }
 
 
@@ -382,7 +492,8 @@ footer{
 
 .apps a{
    text-decoration: none;
-   color:#12d5d8; 
+   color: #916cb8;
+   text-shadow: 5px 3px 10px #0A51c5; 
 }
 
 .apps a i{
@@ -395,7 +506,7 @@ footer{
 }
 
 .footer-bottom{
-    background: radial-gradient( circle, black, #130c25, #1d1238 );
+    background-image: radial-gradient( circle, black, #130c25, #1d1238 );
     width: 100vw;
     padding: 20px 0;
     text-align: center;
