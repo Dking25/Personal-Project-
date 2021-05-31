@@ -35,10 +35,6 @@ nav a{
   
 }
 
-/* body */
-
-
-
 @keyframes hex_anim{
     0%{background-position: 0 0;}
     100%{background-position: 0 -30000px;}
@@ -65,7 +61,7 @@ section img{
 }
 
 section h1{
-    padding-top: 200px;
+    padding-top: 50px;
     color: #916cb8;
     text-shadow: 5px 3px 10px #0A51c5;
     font-size: 4em;
@@ -166,9 +162,17 @@ section .welcome-title div:nth-child(9){
     }
 }
 
-/* body section */
+.set2{
+    transform: scale(2) rotateY(180deg);
+    filter: blur(2px);
+}
 
-* {box-sizing:border-box}
+.set3{
+    transform: scale(0.8) rotatex(180deg);
+    filter: blur(2px);
+}
+
+/* body section */
 
 body{
     background-image:url(/PsychManD/Images/Backgroundimages/hexagon-bodybackground.jpg);
@@ -314,6 +318,7 @@ width: 100%;
 opacity: 0;
 transition: .5s ease;
 background-color: #1d1238;
+
 }
 
 .modal-container:hover .overlay-text-container{
@@ -394,9 +399,10 @@ background-color: #1d1238;
 
 .modal-content {
     text-align: center;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.9);
     font-size: 20px;
     word-spacing: 3px;
+    color: #916cb8;
 }
 
 .modal-content h3{
@@ -445,7 +451,7 @@ footer{
     right: 0;
     background-image: radial-gradient( circle, black, #130c25, #1d1238 );
     height: auto;
-    width: 100vw;
+    width: 100%;
     font-family: 'Courier New', Courier, monospace;
     padding-top: 40px;
     color: #916cb8;
@@ -507,7 +513,7 @@ footer{
 
 .footer-bottom{
     background-image: radial-gradient( circle, black, #130c25, #1d1238 );
-    width: 100vw;
+    width: 100%;
     padding: 20px 0;
     text-align: center;
 }
